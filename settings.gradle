@@ -1,0 +1,3 @@
+include ':app', ':carouselpicker'
+include ':openCVLibrary343'
+project(':carouselpicker').projectDir = new File('CarouselPicker13/carouselpicker')

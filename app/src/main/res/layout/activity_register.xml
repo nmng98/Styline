@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:theme="@style/AppTheme.NoActionBar">
+
+    <ImageView
+        android:layout_width="469dp"
+        android:layout_height="214dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/titleandline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/rectangleEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rectangleUser"
+        android:layout_alignTop="@id/rectangleUser"
+        android:layout_alignRight="@id/rectangleUser"
+        android:layout_alignBottom="@id/rectangleUser"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/usericon1"
+        android:hint="  Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorTransparentWhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleEmail"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleEmail"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="@+id/rectangleEmail"
+        app:layout_constraintTop_toTopOf="@+id/rectangleEmail"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <ImageView
+        android:id="@+id/rectangleUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rectangleEmail"
+        android:layout_alignTop="@id/rectangleEmail"
+        android:layout_alignRight="@id/rectangleEmail"
+        android:layout_alignBottom="@id/rectangleEmail"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/mailicon1"
+        android:hint="  Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorTransparentWhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleUser"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleUser"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/rectangleUser"
+        app:layout_constraintTop_toTopOf="@+id/rectangleUser"
+        app:layout_constraintVertical_bias="0.583" />
+
+
+
+    <ImageView
+        android:id="@+id/rectanglePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rectanglePassword"
+        android:layout_alignTop="@id/rectanglePassword"
+        android:layout_alignRight="@id/rectanglePassword"
+        android:layout_alignBottom="@id/rectanglePassword"
+        android:background="@null"
+        android:password="true"
+        android:drawableLeft="@drawable/lockicon1"
+        android:hint="  Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorTransparentWhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectanglePassword"
+        app:layout_constraintEnd_toEndOf="@+id/rectanglePassword"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/rectanglePassword"
+        app:layout_constraintTop_toTopOf="@+id/rectanglePassword" />
+
+    <ImageView
+        android:id="@+id/rectangleConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rectangleConfirmPassword"
+        android:layout_alignTop="@id/rectangleConfirmPassword"
+        android:layout_alignRight="@id/rectangleConfirmPassword"
+        android:layout_alignBottom="@id/rectangleConfirmPassword"
+        android:layout_marginBottom="12dp"
+        android:background="@null"
+        android:password="true"
+        android:drawableLeft="@drawable/lockicon1"
+        android:hint="  Confirm Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorTransparentWhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleConfirmPassword"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="@+id/rectangleConfirmPassword" />
+
+    <ImageView
+        android:id="@+id/rectangleRegister"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:src="@drawable/peach"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rectangleRegister"
+        android:layout_alignTop="@id/rectangleRegister"
+        android:layout_alignRight="@id/rectangleRegister"
+        android:layout_alignBottom="@id/rectangleRegister"
+        android:background="@null"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleRegister"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleRegister"
+        app:layout_constraintStart_toStartOf="@+id/rectangleRegister"
+        app:layout_constraintTop_toTopOf="@+id/rectangleRegister" />
+
+    <TextView
+        android:id="@+id/alreadyAccount"
+        android:layout_width="315dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/already_account"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

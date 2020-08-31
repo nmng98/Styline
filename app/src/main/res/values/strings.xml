@@ -1,0 +1,21 @@
+<resources>
+    <!--SplashActivity-->
+    <string name="register_text">REGISTER</string>
+
+
+    <!--LoginActivity-->
+    <string name="app_name">STYLINE</string>
+    <string name="login_text">LOG IN</string>
+    <string name="register_account"><u>Need an account? Click here!.</u></string>
+
+    <!--RegisterActivity-->
+    <string name="already_account"><u>Already have an account? Log in.</u></string>
+
+    <!--CustomDialog-->
+    <string name="clothing_info">CLOTHING INFO</string>
+    <string name="title_popup">Title</string>
+    <string name="bought_popup">Where did you buy it from?</string>
+    <string name="tags_popup">Separate tags with commas</string>
+    <string name="save_button">SAVE</string>
+
+</resources>

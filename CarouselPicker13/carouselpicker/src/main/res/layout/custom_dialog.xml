@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="200dp"
+    android:background="@drawable/dialog_bg"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/clothing_info"
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/dialog_title_bg"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:text="Clothing Info"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/brand_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:backgroundTint="#F2A39C"
+        android:layout_gravity="center_horizontal"
+        android:hint="BRAND" />
+
+    <EditText
+        android:id="@+id/type_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10dp"
+        android:backgroundTint="#F2A39C"
+        android:hint="TYPE" />
+
+    <EditText
+        android:id="@+id/tags_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10dp"
+        android:backgroundTint="#F2A39C"
+        android:hint="TAGS (SEPARATE WITH COMMAS)" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#F5B39A"
+        android:text="SAVE"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

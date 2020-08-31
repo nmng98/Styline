@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:camera_facing="back"
+        app:camera_flash="auto"
+        app:camera_focus="continuous"
+        app:camera_permissions="camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <com.example.virtualcloset.DrawableImageView
+            android:id="@+id/capturedView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </com.camerakit.CameraKitView>
+
+    <ImageView
+        android:id="@+id/galleryButton"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991"
+        app:srcCompat="@drawable/white_gallery_icon" />
+
+    <TextView
+        android:id="@+id/paintSize"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="650dp"
+        android:text="5"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/camera" />
+
+    <ImageView
+        android:id="@+id/cameraButton"
+        android:layout_width="26dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/galleryButton"
+        app:layout_constraintTop_toTopOf="@+id/galleryButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_camera_alt_24px" />
+
+    <ImageView
+        android:id="@+id/flashButton"
+        android:layout_width="16dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cameraButton"
+        app:layout_constraintTop_toTopOf="@+id/cameraButton"
+        app:srcCompat="@drawable/white_flash_icon" />
+
+    <ImageView
+        android:id="@+id/acceptImage"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cancelImage"
+        app:srcCompat="@drawable/white_check" />
+
+    <ImageView
+        android:id="@+id/cancelImage"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/acceptImage"
+        app:layout_constraintTop_toBottomOf="@+id/camera"
+        app:srcCompat="@drawable/white_cancel_x" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/drawMode"
+        android:layout_width="46dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:text="BG"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#c62828"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelImage"
+        app:layout_constraintStart_toEndOf="@+id/acceptImage"
+        app:layout_constraintTop_toBottomOf="@+id/camera" />
+
+    <ImageView
+        android:id="@+id/exitCamera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="360dp"
+        android:layout_marginBottom="700dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_close_x" />
+
+    <ProgressBar
+        android:id="@+id/uploadProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
