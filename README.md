@@ -10,6 +10,7 @@ Styline is an Android application that virtualizes one's wardrobe. Inspired by C
 * Adobe XD
 * OpenCV
 * Firebase
+* Google Cloud Vision
 
 #### Functionalities
 * capture live pictures through the in-app camera
